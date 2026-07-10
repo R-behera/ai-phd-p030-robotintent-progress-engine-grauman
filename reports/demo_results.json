@@ -15,6 +15,46 @@
   "next_step": "Replace seed cases with public/lab visual examples and run one real pretrained baseline.",
   "professor": "Kristen Grauman",
   "project_family": "vision",
+  "proposed_method": {
+    "algorithm_id": "P030-Grauman-ComputerVision",
+    "algorithm_name": "GraumanCounterfactualComputerVisionCalibrateMatrix",
+    "core_mechanism": "prioritizes distribution-shift failures with confidence-aware calibration penalties",
+    "decision_rule": "Rank seed cases by vision-specific priority score with Grauman-aligned focus term 'Computer vision'.",
+    "mean_priority_score": 0.455,
+    "project_family": "vision",
+    "top_cases": [
+      {
+        "action": "add to professor-facing failure gallery",
+        "case_id": "V4",
+        "priority_score": 0.8125,
+        "signals": {
+          "confidence_error": 0.85,
+          "correct": false,
+          "shift_type": "domain"
+        }
+      },
+      {
+        "action": "add to professor-facing failure gallery",
+        "case_id": "V2",
+        "priority_score": 0.7125,
+        "signals": {
+          "confidence_error": 0.65,
+          "correct": false,
+          "shift_type": "context"
+        }
+      },
+      {
+        "action": "retain as calibration control",
+        "case_id": "V1",
+        "priority_score": 0.1625,
+        "signals": {
+          "confidence_error": 0.45,
+          "correct": true,
+          "shift_type": "viewpoint"
+        }
+      }
+    ]
+  },
   "research_area": "Computer vision, video understanding, egocentric/embodied perception",
   "university": "University of Texas at Austin",
   "value_add": "distribution-shift and failure-analysis benchmark for vision/multimodal models"
