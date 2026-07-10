@@ -1,0 +1,13 @@
+{
+  "professor": "Kristen Grauman",
+  "university": "University of Texas at Austin",
+  "program": "Computer Science",
+  "research_area": "Computer vision, video understanding, egocentric/embodied perception",
+  "representative_paper": "Ego4D: Around the World in 3,000 Hours of Egocentric Video; 2022; CVPR",
+  "paper_link": "https://scholar.google.com/scholar?q=Ego4D%3A+Around+the+World+in+3%2C000+Hours+of+Egocentric+Video",
+  "project_family": "vision",
+  "focus": "Computer vision",
+  "value_add_artifact": "distribution-shift and failure-analysis benchmark for vision/multimodal models",
+  "next_step": "Replace seed cases with public/lab visual examples and run one real pretrained baseline.",
+  "generated_for": "professor outreach value-add starter"
+}
